@@ -1,0 +1,170 @@
+/* Override default box-sizing */
+*, *:before, *:after {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for hyperlinks */
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:active {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Make images and text responsive */
+
+.responsive__img {
+  height: auto;
+  max-width: 100%;
+}
+
+.featured__image {
+  border: 2px solid #050505;
+  border-radius: 5px;
+  max-width: 95%;
+}
+
+.text__header {
+  font-size: 26px;
+}
+
+.header__title {
+  font-size: 18px;
+}
+
+.featured__title {
+  font-size: 22px;
+}
+
+.featured__text {
+  font-size: 14px;
+}
+
+/*
+ * Header
+ */
+
+.header {
+  background-color: #C0C0C0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.header__logo {
+  border-radius: 10px;
+}
+
+/*
+ * Main
+ */
+
+.content,
+.featured__item {
+  text-align: center;
+}
+
+.featured__work {
+  margin-top: 30px;
+}
+
+.featured__item {
+  margin: 20px 0;
+}
+
+@media screen and (min-width: 480px) {
+  .text__header {
+    font-size: 30px;
+  }
+  .header__title {
+    font-size: 20px;
+  }
+  .hero__img {
+    width: 100%;
+  }
+  .featured__title {
+    font-size: 24px;
+  }
+  .featured__text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .header {
+    display: flex;
+    margin: 0 auto 30px;
+    max-width: 1440px;
+    padding: 28px;
+  }
+  .header__text {
+    flex: 1;
+    text-align: right;
+  }
+  .hero__img {
+    max-width: 720px;
+    border-radius: 10px;
+  }
+  .content__header{
+    font-size: 34px;
+  }
+  .featured {
+    display: flex;
+    max-width: 1440px;
+  }
+  .featured__item {
+    margin: 20px 20px 20px 0;
+    width: 30%;
+  }
+  .featured__item:first-child {
+    margin-left: auto;
+  }
+  .featured__item:last-child {
+    margin-right: auto;
+  }
+  .featured__title {
+    font-size: 18px;
+  }
+  .featured__text {
+    font-size: 12px;
+  }
+}
+/* ADD BREAKPOINT HERE AS ADDITIONAL PROJECTS ARE ADDED TO PORTFOLIO
+@media screen and (min-width: 820px) {
+*/
+
+@media screen and (min-width: 920px) {
+  .text__header {
+    font-size: 32px;
+  }
+  .header__title {
+    font-size: 22px;
+  }
+  .content__header {
+    font-size: 38px;
+  }
+  .featured__title {
+    font-size: 22px;
+  }
+}
+
+/* ADD BREAKPOINT HERE AS ADDITIONAL PROJECTS ARE ADDED TO PORTFOLIO
+@media screen and (min-width: 1024px) {
+*/
+
+/*
+* Footer
+*/
